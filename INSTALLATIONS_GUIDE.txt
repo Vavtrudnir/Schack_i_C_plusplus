@@ -1,0 +1,61 @@
+=== Schack-appen - Installationsguide ===
+
+PROBLEM LÖST! Appen är nu kompilerad och redo att köras.
+
+FÖLJ DESSA STEG FÖR ATT STARTA APPEN:
+
+1. ÖPPNA KOMMANDOTOLK (CMD) ELLER POWERSHELL SOM ADMINISTRATör
+
+2. Navigera till projektmappen:
+   cd "c:\GitRepos\Programmering 2025\Schack_i_C_plusplus"
+
+3. Kör installations-scriptet:
+   setup_dependencies.bat
+
+4. Starta appen:
+   start_chess.bat
+
+=== VAD SOM ÄR KLART NU ===
+
+✅ schack_standalone.exe - Huvudprogrammet (fristående)
+✅ schack_final.exe - Alternativ version
+✅ stockfish.exe - Schack-motor för datorn
+✅ bilder/ - Alla schackpjäser (w_pawn.png, b_king.png, etc)
+✅ setup_dependencies.bat - Installerar DLL:ar
+✅ start_chess.bat - Startar appen med kontroller
+
+=== OM APPEN ÄNDRÅ INTE STARTAR ===
+
+Om du fortfarande får DLL-fel, prova detta:
+
+1. Installera MSYS2: https://www.msys2.org/
+2. Öppna MSYS2 terminal och kör:
+   pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-sfml
+
+3. Kompilera om med:
+   compile_standalone.bat
+
+=== SPELETS FUNKTIONER ===
+
+🎮 Människa (vit) vs Dator (svart)
+🤖 Stockfish 17.1 som motor
+🖱️ Klicka för att välja och flytta pjäser
+📊 FEN-notering för board state
+🎨 Grafiskt gränssnitt med bilder
+
+=== KONTROLLER ===
+
+- Klicka på en vit pjäs för att välja den
+- Klicka på destinationen för att flytta
+- Datorn svarar automatiskt med svart
+- Vit börjar alltid
+
+=== FILER ===
+
+schack_med_bilder.cpp - Källkod
+schack_standalone.exe - Körbar fil
+stockfish.exe - Schackmotor
+bilder/ - Pjäsbilder
+*.dll - Nödvändiga bibliotek
+
+APPEN ÄR NU REDO! 🚀
